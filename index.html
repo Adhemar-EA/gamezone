@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMEZONE ACCESSORIES | Potencia tu Experiencia Gamer</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+    <!-- AOS Animation CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --neon-blue: #00D4FF;
+            --cyan-electric: #00FFFF;
+            --neon-purple: #B026FF;
+            --gamer-green: #A8FF00;
+            --dark-bg: #050816;
+            --dark-gray: #121826;
+            --dark-card: #0a0f1c;
+            --dark-border: #1a1f30;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0b0;
+            --glow-blue: 0 0 15px rgba(0, 212, 255, 0.5);
+            --glow-purple: 0 0 15px rgba(176, 38, 255, 0.5);
+            --glow-cyan: 0 0 15px rgba(0, 255, 255, 0.5);
+            --glow-green: 0 0 15px rgba(168, 255, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            line-height: 1.6;
+            cursor: default;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--dark-bg);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--neon-purple);
+            border-radius: 10px;
+            box-shadow: var(--glow-purple);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--neon-blue);
+            box-shadow: var(--glow-blue);
+        }
+
+        /* Selection */
+        ::selection {
+            background: var(--neon-purple);
+            color: #fff;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        }
+
+        /* ============================================
+           HEADER - GLASSMORPHISM
+           ============================================ */
+        .navbar {
+            background: rgba(5, 8, 22, 0.75) !important;
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 212, 255, 0.08);
+            transition: all 0.4s ease;
+            padding: 10px 0;
+            z-index: 1050;
+        }
+        .navbar.scrolled {
+            background: rgba(5, 8, 22, 0.92) !important;
+            border-bottom: 1px solid rgba(176, 38, 255, 0.4);
+            box-shadow: 0 4px 35px rgba(0, 0, 0, 0.7), 0 0 25px rgba(176, 38, 255, 0.15);
+            padding: 6px 0;
+        }
+        .navbar-brand {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--neon-blue), var(--cyan-electric), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: none;
+            filter: drop-shadow(0 0 12px rgba(0, 212, 255, 0.6));
+            transition: all 0.3s ease;
+        }
+        .navbar-brand:hover {
+            filter: drop-shadow(0 0 20px rgba(176, 38, 255, 0.9));
+            transform: scale(1.03);
+        }
+        .navbar-brand .brand-icon {
+            font-size: 1.8rem;
+            color: var(--neon-blue);
+            -webkit-text-fill-color: var(--neon-blue);
+            filter: drop-shadow(0 0 10px var(--neon-blue));
+            margin-right: 6px;
+            animation: pulse-icon 2s ease-in-out infinite;
+        }
+        @keyframes pulse-icon {
+            0%,
+            100% {
+                filter: drop-shadow(0 0 10px var(--neon-blue));
+            }
+            50% {
+                filter: drop-shadow(0 0 25px var(--cyan-electric));
+            }
+        }
+
+        .nav-link {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            color: #c0c0d0 !important;
+            text-transform: uppercase;
+            position: relative;
+            transition: all 0.3s ease;
+            padding: 8px 16px !important;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--neon-blue) !important;
+            text-shadow: 0 0 12px var(--neon-blue);
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 2px;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 60%;
+            height: 2px;
+            background: var(--neon-blue);
+            box-shadow: var(--glow-blue);
+            border-radius: 2px;
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: translateX(-50%) scaleX(1);
+        }
+
+        .btn-neon {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 10px 24px;
+            border-radius: 50px;
+            background: transparent;
+            color: var(--neon-blue);
+            border: 2px solid var(--neon-blue);
+            box-shadow: var(--glow-blue), inset 0 0 8px rgba(0, 212, 255, 0.15);
+            transition: all 0.35s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-neon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+        .btn-neon:hover {
+            background: var(--neon-blue);
+            color: #050816;
+            box-shadow: 0 0 35px rgba(0, 212, 255, 0.8), 0 0 70px rgba(0, 212, 255, 0.4);
+            transform: translateY(-3px);
+        }
+        .btn-neon:hover::before {
+            left: 100%;
+        }
+        .btn-neon-purple {
+            border-color: var(--neon-purple);
+            color: var(--neon-purple);
+            box-shadow: var(--glow-purple), inset 0 0 8px rgba(176, 38, 255, 0.15);
+        }
+        .btn-neon-purple:hover {
+            background: var(--neon-purple);
+            color: #fff;
+            box-shadow: 0 0 35px rgba(176, 38, 255, 0.8), 0 0 70px rgba(176, 38, 255, 0.4);
+        }
+        .btn-neon-green {
+            border-color: var(--gamer-green);
+            color: var(--gamer-green);
+            box-shadow: var(--glow-green), inset 0 0 8px rgba(168, 255, 0, 0.15);
+        }
+        .btn-neon-green:hover {
+            background: var(--gamer-green);
+            color: #050816;
+            box-shadow: 0 0 35px rgba(168, 255, 0, 0.8), 0 0 70px rgba(168, 255, 0, 0.4);
+        }
+
+        /* Cart Button */
+        .cart-btn {
+            position: relative;
+            font-size: 1.4rem;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: none;
+            border: none;
+            padding: 6px 10px;
+        }
+        .cart-btn:hover {
+            color: var(--neon-blue);
+            text-shadow: var(--glow-blue);
+        }
+        .cart-count {
+            position: absolute;
+            top: -6px;
+            right: -6px;
+            background: var(--neon-purple);
+            color: #fff;
+            font-size: 0.7rem;
+            font-weight: 700;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 12px rgba(176, 38, 255, 0.7);
+            animation: bounce-cart 0.5s ease;
+        }
+        @keyframes bounce-cart {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.4);
+            }
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero-section {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding-top: 80px;
+            background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.06) 0%, rgba(5, 8, 22, 1) 70%),
+                radial-gradient(ellipse at 30% 50%, rgba(176, 38, 255, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 20%, rgba(0, 255, 255, 0.05) 0%, transparent 50%);
+        }
+        #particlesCanvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .hero-title {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #fff 0%, var(--neon-blue) 30%, var(--cyan-electric) 60%, var(--neon-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.7));
+            margin-bottom: 1.5rem;
+            animation: title-glow 3s ease-in-out infinite;
+        }
+        @keyframes title-glow {
+            0%,
+            100% {
+                filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.7));
+            }
+            50% {
+                filter: drop-shadow(0 0 50px rgba(176, 38, 255, 1));
+            }
+        }
+        .hero-subtitle {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 500;
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: #c0c0d0;
+            letter-spacing: 2px;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* ============================================
+           SECTION TITLES
+           ============================================ */
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            letter-spacing: 3px;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+        .section-title .highlight {
+            background: linear-gradient(135deg, var(--neon-blue), var(--cyan-electric));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            filter: drop-shadow(0 0 15px rgba(0, 212, 255, 0.6));
+        }
+        .section-subtitle {
+            text-align: center;
+            color: #a0a0b0;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 3rem;
+        }
+        .divider-neon {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple), var(--cyan-electric));
+            border-radius: 50px;
+            margin: 0 auto 3rem;
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(176, 38, 255, 0.4);
+            animation: divider-pulse 2s ease-in-out infinite;
+        }
+        @keyframes divider-pulse {
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(0, 212, 255, 0.6), 0 0 40px rgba(176, 38, 255, 0.4);
+            }
+            50% {
+                box-shadow: 0 0 35px rgba(0, 255, 255, 1), 0 0 60px rgba(176, 38, 255, 0.7);
+            }
+        }
+
+        /* ============================================
+           CATEGORY CARDS
+           ============================================ */
+        .category-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+        }
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(transparent, rgba(0, 212, 255, 0.1), transparent, rgba(176, 38, 255, 0.1), transparent);
+            animation: rotate-border 8s linear infinite;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        @keyframes rotate-border {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .category-card:hover::before {
+            opacity: 1;
+        }
+        .category-card:hover {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3), 0 10px 40px rgba(0, 0, 0, 0.5);
+            transform: translateY(-12px);
+        }
+        .category-icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            display: block;
+            transition: all 0.4s ease;
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.3));
+        }
+        .category-card:hover .category-icon {
+            filter: drop-shadow(0 0 20px var(--neon-blue));
+            transform: scale(1.15);
+        }
+        .category-card h4 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .category-card p {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .category-card .btn-sm {
+            font-size: 0.8rem;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* ============================================
+           PRODUCT CARDS
+           ============================================ */
+        .product-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-card:hover {
+            border-color: var(--neon-purple);
+            box-shadow: 0 0 35px rgba(176, 38, 255, 0.3), 0 15px 50px rgba(0, 0, 0, 0.6);
+            transform: translateY(-10px);
+        }
+        .product-img-wrapper {
+            position: relative;
+            overflow: hidden;
+            background: #0d1120;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-img-wrapper img {
+            max-height: 200px;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+            filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.3));
+        }
+        .product-card:hover .product-img-wrapper img {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.6));
+        }
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: var(--neon-purple);
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(176, 38, 255, 0.6);
+            z-index: 2;
+            letter-spacing: 1px;
+        }
+        .product-body {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-body h5 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            color: #fff;
+            margin-bottom: 0.5rem;
+        }
+        .product-price {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 1.4rem;
+            color: var(--neon-blue);
+            text-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+        }
+        .product-price .old-price {
+            font-size: 0.9rem;
+            color: #666;
+            text-decoration: line-through;
+            margin-left: 8px;
+            text-shadow: none;
+        }
+        .product-rating {
+            color: #ffc107;
+            font-size: 0.85rem;
+            margin: 0.5rem 0;
+        }
+        .product-rating span {
+            color: #888;
+            margin-left: 5px;
+        }
+        .btn-add-cart {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 30px;
+            padding: 10px;
+            background: transparent;
+            border: 2px solid var(--gamer-green);
+            color: var(--gamer-green);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            margin-top: auto;
+        }
+        .btn-add-cart:hover {
+            background: var(--gamer-green);
+            color: #050816;
+            box-shadow: 0 0 25px rgba(168, 255, 0, 0.6);
+        }
+
+        /* ============================================
+           BENEFITS
+           ============================================ */
+        .benefit-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.4s ease;
+            height: 100%;
+        }
+        .benefit-card:hover {
+            border-color: var(--cyan-electric);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+            transform: translateY(-8px);
+        }
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--cyan-electric);
+            margin-bottom: 1rem;
+            filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.5));
+            transition: all 0.4s ease;
+        }
+        .benefit-card:hover .benefit-icon {
+            filter: drop-shadow(0 0 30px rgba(0, 255, 255, 0.9));
+            transform: scale(1.2);
+        }
+        .benefit-card h5 {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+
+        /* ============================================
+           PROMO BANNER
+           ============================================ */
+        .promo-section {
+            background: linear-gradient(135deg, rgba(176, 38, 255, 0.2) 0%, rgba(0, 212, 255, 0.15) 50%, rgba(168, 255, 0, 0.1) 100%);
+            border: 2px solid rgba(176, 38, 255, 0.4);
+            border-radius: 25px;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 50px rgba(176, 38, 255, 0.2), inset 0 0 30px rgba(0, 212, 255, 0.05);
+        }
+        .promo-section::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            left: -30%;
+            width: 160%;
+            height: 160%;
+            background: conic-gradient(transparent, rgba(168, 255, 0, 0.08), transparent, rgba(0, 212, 255, 0.08), transparent);
+            animation: rotate-border 10s linear infinite;
+        }
+        .promo-title {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            letter-spacing: 2px;
+            color: #fff;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 30px rgba(168, 255, 0, 0.6);
+        }
+        .countdown {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+            margin-top: 1.5rem;
+        }
+        .countdown-item {
+            background: rgba(0, 0, 0, 0.6);
+            border: 2px solid var(--neon-blue);
+            border-radius: 15px;
+            padding: 15px 20px;
+            min-width: 80px;
+            text-align: center;
+            box-shadow: var(--glow-blue);
+        }
+        .countdown-item span {
+            display: block;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 900;
+            font-size: 2rem;
+            color: var(--neon-blue);
+        }
+        .countdown-item small {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: #aaa;
+            text-transform: uppercase;
+        }
+
+        /* ============================================
+           TESTIMONIALS SWIPER
+           ============================================ */
+        .testimonial-card {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.2);
+        }
+        .testimonial-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid var(--neon-purple);
+            box-shadow: 0 0 20px rgba(176, 38, 255, 0.5);
+            margin: 0 auto 1rem;
+            object-fit: cover;
+        }
+        .testimonial-stars {
+            color: #ffc107;
+            margin: 0.8rem 0;
+            font-size: 1rem;
+        }
+        .testimonial-text {
+            color: #c0c0d0;
+            font-style: italic;
+            line-height: 1.7;
+        }
+        .testimonial-name {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            color: var(--neon-blue);
+            margin-top: 1rem;
+            letter-spacing: 1px;
+        }
+
+        /* ============================================
+           CONTACT FORM
+           ============================================ */
+        .contact-form-wrapper {
+            background: var(--dark-card);
+            border: 1px solid var(--dark-border);
+            border-radius: 25px;
+            padding: 3rem;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+        .contact-form-wrapper:hover {
+            border-color: rgba(0, 212, 255, 0.3);
+            box-shadow: 0 0 40px rgba(0, 212, 255, 0.1);
+        }
+        .form-control-custom {
+            background: #0a0f1c;
+            border: 2px solid var(--dark-border);
+            color: #fff;
+            border-radius: 12px;
+            padding: 14px 18px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+        .form-control-custom:focus {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.25);
+            background: #0d1225;
+            outline: none;
+            color: #fff;
+        }
+        .form-control-custom::placeholder {
+            color: #555;
+        }
+        .form-label-custom {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: var(--neon-blue);
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--dark-gray);
+            border-top: 2px solid rgba(0, 212, 255, 0.2);
+            padding: 3rem 0 1.5rem;
+            position: relative;
+        }
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--neon-blue), var(--neon-purple), var(--cyan-electric), transparent);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+        }
+        .footer-logo {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 2px solid var(--dark-border);
+            color: #aaa;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+            margin: 0 6px;
+            text-decoration: none;
+        }
+        .social-icon:hover {
+            border-color: var(--neon-blue);
+            color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            transform: translateY(-5px);
+        }
+
+        /* ============================================
+           WHATSAPP FLOATING BUTTON
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 999;
+            width: 60px;
+            height: 60px;
+            background: #25d366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: #fff;
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.6);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            animation: float-wa 3s ease-in-out infinite;
+        }
+        @keyframes float-wa {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-12px);
+            }
+        }
+        .whatsapp-float:hover {
+            box-shadow: 0 0 40px rgba(37, 211, 102, 0.9);
+            transform: scale(1.1);
+            color: #fff;
+        }
+
+        /* ============================================
+           CART OFFCANVAS
+           ============================================ */
+        .offcanvas-custom {
+            background: var(--dark-gray) !important;
+            border-left: 2px solid rgba(0, 212, 255, 0.3) !important;
+        }
+        .offcanvas-custom .offcanvas-header {
+            border-bottom: 1px solid var(--dark-border);
+        }
+        .offcanvas-custom .offcanvas-title {
+            font-family: 'Orbitron', sans-serif;
+            letter-spacing: 2px;
+            color: var(--neon-blue);
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 0;
+            border-bottom: 1px solid var(--dark-border);
+        }
+        .cart-item img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+            border-radius: 10px;
+            background: #0d1120;
+            padding: 5px;
+        }
+        .cart-item-info h6 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.85rem;
+            color: #fff;
+            margin: 0;
+        }
+        .cart-item-info .price {
+            color: var(--neon-blue);
+            font-weight: 700;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .cart-total {
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: #fff;
+        }
+
+        /* ============================================
+           SEARCH MODAL
+           ============================================ */
+        .search-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(5, 8, 22, 0.95);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        .search-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .search-input-wrapper {
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+        .search-input-wrapper input {
+            width: 100%;
+            padding: 18px 50px 18px 25px;
+            border-radius: 50px;
+            border: 2px solid var(--neon-blue);
+            background: #0a0f1c;
+            color: #fff;
+            font-size: 1.2rem;
+            font-family: 'Rajdhani', sans-serif;
+            letter-spacing: 2px;
+            box-shadow: 0 0 30px rgba(0, 212, 255, 0.3);
+        }
+        .search-input-wrapper input:focus {
+            outline: none;
+            box-shadow: 0 0 50px rgba(0, 212, 255, 0.5);
+        }
+        .search-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            z-index: 10000;
+            transition: all 0.3s ease;
+        }
+        .search-close:hover {
+            color: var(--neon-purple);
+            text-shadow: 0 0 20px var(--neon-purple);
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.1rem;
+                letter-spacing: 1px;
+            }
+            .hero-title {
+                letter-spacing: 1px;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .countdown-item {
+                min-width: 60px;
+                padding: 10px 14px;
+            }
+            .countdown-item span {
+                font-size: 1.4rem;
+            }
+            .contact-form-wrapper {
+                padding: 1.5rem;
+            }
+            .promo-section {
+                padding: 2rem 1rem;
+            }
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.6rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        @media (max-width: 576px) {
+            .section-title {
+                font-size: 1.5rem;
+                letter-spacing: 1px;
+            }
+            .countdown {
+                gap: 8px;
+            }
+            .countdown-item {
+                min-width: 55px;
+                padding: 8px 10px;
+            }
+            .countdown-item span {
+                font-size: 1.1rem;
+            }
+            .product-card {
+                border-radius: 15px;
+            }
+        }
+
+        /* Toast notification */
+        .toast-notification {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            z-index: 9999;
+            background: var(--dark-card);
+            border: 2px solid var(--gamer-green);
+            border-radius: 15px;
+            padding: 15px 25px;
+            color: #fff;
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            box-shadow: 0 0 25px rgba(168, 255, 0, 0.4);
+            opacity: 0;
+            transform: translateX(120%);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1.2);
+        }
+        .toast-notification.show {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .toast-notification.error {
+            border-color: #ff4444;
+            box-shadow: 0 0 25px rgba(255, 68, 68, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+    SEARCH OVERLAY
+    ============================================ -->
+    <div class="search-overlay" id="searchOverlay">
+        <i class="fas fa-times search-close" id="searchClose"></i>
+        <div class="search-input-wrapper">
+            <input type="text" id="searchInput" placeholder="Buscar productos...">
+            <i class="fas fa-search" style="position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--neon-blue);font-size:1.3rem;"></i>
+        </div>
+    </div>
+
+    <!-- ============================================
+    HEADER / NAVBAR
+    ============================================ -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-gamepad brand-icon"></i> GAMEZONE <span style="font-size:0.7rem;color:var(--neon-purple);-webkit-text-fill-color:var(--neon-purple);">ACCESSORIES</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars" style="color:var(--neon-blue);font-size:1.5rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categorias">Categorías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <button class="cart-btn" id="searchToggle" title="Buscar">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button class="cart-btn" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" title="Carrito">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <a href="#productos" class="btn btn-neon d-none d-lg-inline-block">Comprar Ahora</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+    HERO SECTION
+    ============================================ -->
+    <section class="hero-section" id="inicio">
+        <canvas id="particlesCanvas"></canvas>
+        <div class="hero-content container" data-aos="fade-up" data-aos-duration="1200">
+            <h1 class="hero-title">Potencia tu<br>Experiencia Gamer</h1>
+            <p class="hero-subtitle">Encuentra los mejores accesorios gamer, periféricos RGB, componentes para PC y mucho más.</p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-neon">Ver Productos</a>
+                <a href="#promociones" class="btn btn-neon btn-neon-purple">Ver Ofertas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    CATEGORÍAS DESTACADAS
+    ============================================ -->
+    <section id="categorias" class="py-5" style="background:var(--dark-bg);">
+        <div class="container py-4">
+            <h2 class="section-title" data-aos="fade-up">Categorías <span class="highlight">Destacadas</span></h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Explora nuestra selección premium</p>
+            <div class="divider-neon" data-aos="zoom-in" data-aos-delay="200"></div>
+            <div class="row g-4" id="categoriesGrid">
+                <!-- Category Card 1 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-card" data-category="audifonos">
+                        <span class="category-icon">🎧</span>
+                        <h4>Audífonos Gamer</h4>
+                        <p>Sonido envolvente 7.1</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+                <!-- Category Card 2 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-card" data-category="teclados">
+                        <span class="category-icon">⌨️</span>
+                        <h4>Teclados Mecánicos</h4>
+                        <p>Switches premium</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+                <!-- Category Card 3 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-card" data-category="mouse">
+                        <span class="category-icon">🖱️</span>
+                        <h4>Mouse Gamer</h4>
+                        <p>Alta precisión DPI</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+                <!-- Category Card 4 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-card" data-category="controles">
+                        <span class="category-icon">🎮</span>
+                        <h4>Controles</h4>
+                        <p>Inalámbricos & Pro</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+                <!-- Category Card 5 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+                    <div class="category-card" data-category="componentes">
+                        <span class="category-icon">💻</span>
+                        <h4>Componentes PC</h4>
+                        <p>GPUs, CPUs, RAM</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+                <!-- Category Card 6 -->
+                <div class="col-6 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="600">
+                    <div class="category-card" data-category="sillas">
+                        <span class="category-icon">🪑</span>
+                        <h4>Sillas Gamer</h4>
+                        <p>Ergonomía premium</p>
+                        <button class="btn btn-sm btn-neon">Ver Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    PRODUCTOS DESTACADOS
+    ============================================ -->
+    <section id="productos" class="py-5" style="background:var(--dark-gray);">
+        <div class="container py-4">
+            <h2 class="section-title" data-aos="fade-up">Productos <span class="highlight">Destacados</span></h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Lo más vendido este mes</p>
+            <div class="divider-neon" data-aos="zoom-in" data-aos-delay="200"></div>
+            <!-- Filter Buttons -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <button class="btn btn-neon btn-sm filter-btn active" data-filter="all">Todos</button>
+                <button class="btn btn-neon btn-sm filter-btn" data-filter="teclados">Teclados</button>
+                <button class="btn btn-neon btn-sm filter-btn" data-filter="mouse">Mouse</button>
+                <button class="btn btn-neon btn-sm filter-btn" data-filter="audifonos">Audífonos</button>
+                <button class="btn btn-neon btn-sm filter-btn" data-filter="controles">Controles</button>
+                <button class="btn btn-neon btn-sm filter-btn" data-filter="streaming">Streaming</button>
+            </div>
+            <!-- Products Grid -->
+            <div class="row g-4" id="productsGrid">
+                <!-- Product 1: Teclado Mecánico RGB -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="teclados" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-25%</span>
+                            <img src="https://placehold.co/400x300/0d1120/00D4FF?text=⌨️+Teclado+RGB" alt="Teclado Mecánico RGB" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>⌨️</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Teclado Mecánico RGB</h5>
+                            <div class="product-rating">★★★★★ <span>(128)</span></div>
+                            <div class="product-price">$89.99 <span class="old-price">$119.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Teclado Mecánico RGB', 89.99, '⌨️')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2: Mouse Gamer RGB -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="mouse" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-30%</span>
+                            <img src="https://placehold.co/400x300/0d1120/B026FF?text=🖱️+Mouse+Gamer" alt="Mouse Gamer RGB" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>🖱️</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Mouse Gamer RGB 16K DPI</h5>
+                            <div class="product-rating">★★★★★ <span>(256)</span></div>
+                            <div class="product-price">$54.99 <span class="old-price">$79.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Mouse Gamer RGB 16K DPI', 54.99, '🖱️')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3: Audífonos Gamer 7.1 -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="audifonos" data-aos="fade-up" data-aos-delay="300">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-20%</span>
+                            <img src="https://placehold.co/400x300/0d1120/00FFFF?text=🎧+Audífonos+7.1" alt="Audífonos Gamer 7.1" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>🎧</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Audífonos Gamer 7.1 Surround</h5>
+                            <div class="product-rating">★★★★☆ <span>(98)</span></div>
+                            <div class="product-price">$69.99 <span class="old-price">$87.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Audífonos Gamer 7.1', 69.99, '🎧')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4: Control Inalámbrico -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="controles" data-aos="fade-up" data-aos-delay="400">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-15%</span>
+                            <img src="https://placehold.co/400x300/0d1120/A8FF00?text=🎮+Control+Pro" alt="Control Inalámbrico" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>🎮</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Control Inalámbrico Pro</h5>
+                            <div class="product-rating">★★★★★ <span>(312)</span></div>
+                            <div class="product-price">$59.99 <span class="old-price">$70.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Control Inalámbrico Pro', 59.99, '🎮')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5: Webcam Streaming -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="streaming" data-aos="fade-up" data-aos-delay="500">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-10%</span>
+                            <img src="https://placehold.co/400x300/0d1120/00D4FF?text=📷+Webcam+4K" alt="Webcam Streaming" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>📷</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Webcam Streaming 4K</h5>
+                            <div class="product-rating">★★★★☆ <span>(74)</span></div>
+                            <div class="product-price">$99.99 <span class="old-price">$110.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Webcam Streaming 4K', 99.99, '📷')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6: Micrófono Gamer -->
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-category="streaming" data-aos="fade-up" data-aos-delay="600">
+                    <div class="product-card">
+                        <div class="product-img-wrapper">
+                            <span class="product-badge">-35%</span>
+                            <img src="https://placehold.co/400x300/0d1120/B026FF?text=🎤+Micrófono+RGB" alt="Micrófono Gamer" class="img-fluid" onerror="this.parentElement.innerHTML='<span style=font-size:5rem;>🎤</span>'">
+                        </div>
+                        <div class="product-body">
+                            <h5>Micrófono Gamer RGB</h5>
+                            <div class="product-rating">★★★★★ <span>(189)</span></div>
+                            <div class="product-price">$79.99 <span class="old-price">$122.99</span></div>
+                            <button class="btn-add-cart" onclick="addToCart('Micrófono Gamer RGB', 79.99, '🎤')">
+                                <i class="fas fa-cart-plus me-2"></i>Agregar al Carrito
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    BENEFICIOS
+    ============================================ -->
+    <section class="py-5" style="background:var(--dark-bg);">
+        <div class="container py-4">
+            <h2 class="section-title" data-aos="fade-up">¿Por qué <span class="highlight">elegirnos?</span></h2>
+            <div class="divider-neon" data-aos="zoom-in" data-aos-delay="100"></div>
+            <div class="row g-4">
+                <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="100">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-shipping-fast"></i></div>
+                        <h5>Envíos Rápidos</h5>
+                        <p class="text-muted small mt-2">Entrega en 24-48 horas</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h5>Garantía de Calidad</h5>
+                        <p class="text-muted small mt-2">2 años de garantía</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="300">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-headset"></i></div>
+                        <h5>Soporte Técnico</h5>
+                        <p class="text-muted small mt-2">24/7 atención experta</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="400">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+                        <h5>Productos Originales</h5>
+                        <p class="text-muted small mt-2">100% auténticos</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg" data-aos="fade-up" data-aos-delay="500">
+                    <div class="benefit-card">
+                        <div class="benefit-icon"><i class="fas fa-lock"></i></div>
+                        <h5>Pagos Seguros</h5>
+                        <p class="text-muted small mt-2">Encriptación SSL</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    NOSOTROS
+    ============================================ -->
+    <section id="nosotros" class="py-5" style="background:var(--dark-gray);">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="section-title text-start">Sobre <span class="highlight">Nosotros</span></h2>
+                    <div class="divider-neon mx-0"></div>
+                    <p style="font-size:1.1rem;color:#c0c0d0;line-height:1.8;">
+                        <strong style="color:var(--neon-blue);">GAMEZONE ACCESSORIES</strong> es una tienda especializada en ofrecer productos gamer de alta calidad para jugadores, streamers y entusiastas de la tecnología.
+                    </p>
+                    <p style="font-size:1.05rem;color:#a0a0b0;line-height:1.8;">
+                        Nuestra misión es brindar los mejores accesorios con garantía, precios competitivos y atención personalizada. Trabajamos con las marcas más reconocidas del mercado como <span style="color:var(--gamer-green);">Razer</span>, <span style="color:var(--cyan-electric);">Logitech G</span> y <span style="color:var(--neon-purple);">ASUS ROG</span>.
+                    </p>
+                    <a href="#contacto" class="btn btn-neon mt-3">Contáctanos</a>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1000">
+                    <div style="font-size:12rem;filter:drop-shadow(0 0 40px rgba(176,38,255,0.5));animation:float-icon 4s ease-in-out infinite;">
+                        🎮
+                    </div>
+                    @keyframes float-icon {
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(-20px);
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    PROMOCIONES
+    ============================================ -->
+    <section id="promociones" class="py-5" style="background:var(--dark-bg);">
+        <div class="container py-4">
+            <div class="promo-section" data-aos="zoom-in" data-aos-duration="800">
+                <h3 class="promo-title">🔥 Hasta 40% de descuento en productos seleccionados</h3>
+                <p style="color:#c0c0d0;font-family:'Rajdhani',sans-serif;font-size:1.2rem;letter-spacing:2px;position:relative;z-index:1;">¡La oferta termina pronto!</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item"><span id="days">00</span><small>Días</small></div>
+                    <div class="countdown-item"><span id="hours">00</span><small>Horas</small></div>
+                    <div class="countdown-item"><span id="minutes">00</span><small>Minutos</small></div>
+                    <div class="countdown-item"><span id="seconds">00</span><small>Segundos</small></div>
+                </div>
+                <a href="#productos" class="btn btn-neon btn-neon-green mt-4" style="position:relative;z-index:1;">Aprovechar Ofertas</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    TESTIMONIOS
+    ============================================ -->
+    <section class="py-5" style="background:var(--dark-gray);">
+        <div class="container py-4">
+            <h2 class="section-title" data-aos="fade-up">Lo que dicen <span class="highlight">nuestros clientes</span></h2>
+            <div class="divider-neon" data-aos="zoom-in"></div>
+            <div class="swiper testimonialSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://i.pravatar.cc/150?img=11" alt="Cliente" class="testimonial-avatar" onerror="this.style.display='none'">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Los mejores periféricos que he comprado. El teclado mecánico RGB es una bestia. ¡Totalmente recomendado!"</p>
+                            <h6 class="testimonial-name">Carlos Mendoza</h6>
+                            <small class="text-muted">Gamer Profesional</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://i.pravatar.cc/150?img=32" alt="Cliente" class="testimonial-avatar" onerror="this.style.display='none'">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"Envío rapidísimo y el mouse es increíblemente preciso. GAMEZONE es mi tienda de confianza."</p>
+                            <h6 class="testimonial-name">Andrea López</h6>
+                            <small class="text-muted">Streamer</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://i.pravatar.cc/150?img=45" alt="Cliente" class="testimonial-avatar" onerror="this.style.display='none'">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <p class="testimonial-text">"La silla gamer que compré es súper cómoda. Paso horas jugando sin molestias. ¡Calidad premium!"</p>
+                            <h6 class="testimonial-name">Diego Ramírez</h6>
+                            <small class="text-muted">Youtuber</small>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img src="https://i.pravatar.cc/150?img=17" alt="Cliente" class="testimonial-avatar" onerror="this.style.display='none'">
+                            <div class="testimonial-stars">★★★★☆</div>
+                            <p class="testimonial-text">"Excelente atención al cliente. Me ayudaron a elegir los componentes perfectos para mi setup."</p>
+                            <h6 class="testimonial-name">Sofía Vargas</h6>
+                            <small class="text-muted">Diseñadora</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4" style="position:relative;"></div>
+                <div class="swiper-button-prev" style="color:var(--neon-blue);"></div>
+                <div class="swiper-button-next" style="color:var(--neon-blue);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FORMULARIO DE CONTACTO
+    ============================================ -->
+    <section id="contacto" class="py-5" style="background:var(--dark-bg);">
+        <div class="container py-4">
+            <h2 class="section-title" data-aos="fade-up">Contácta<span class="highlight">nos</span></h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Estamos aquí para ayudarte</p>
+            <div class="divider-neon" data-aos="zoom-in" data-aos-delay="200"></div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Nombre Completo *</label>
+                                    <input type="text" class="form-control-custom w-100" name="name" id="inputName" placeholder="Tu nombre completo" required>
+                                    <div class="invalid-feedback" style="color:#ff4444;font-size:0.8rem;display:none;">Campo requerido</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Correo Electrónico *</label>
+                                    <input type="email" class="form-control-custom w-100" name="email" id="inputEmail" placeholder="tu@email.com" required>
+                                    <div class="invalid-feedback" style="color:#ff4444;font-size:0.8rem;display:none;">Email inválido</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Teléfono</label>
+                                    <input type="tel" class="form-control-custom w-100" name="phone" id="inputPhone" placeholder="+52 123 456 7890">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label-custom">Asunto *</label>
+                                    <input type="text" class="form-control-custom w-100" name="subject" id="inputSubject" placeholder="Asunto del mensaje" required>
+                                    <div class="invalid-feedback" style="color:#ff4444;font-size:0.8rem;display:none;">Campo requerido</div>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label-custom">Mensaje *</label>
+                                    <textarea class="form-control-custom w-100" name="message" id="inputMessage" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    <div class="invalid-feedback" style="color:#ff4444;font-size:0.8rem;display:none;">Campo requerido</div>
+                                </div>
+                                <!-- Honeypot anti-spam -->
+                                <div style="position:absolute;left:-9999px;" aria-hidden="true">
+                                    <input type="text" name="honeypot" id="honeypot" tabindex="-1" autocomplete="off">
+                                </div>
+                                <div class="col-12 text-center mt-3">
+                                    <button type="submit" class="btn btn-neon btn-neon-purple px-5 py-3" id="submitBtn">
+                                        <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="formMessage" class="text-center mt-3" style="display:none;font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:1px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="mb-3">
+                <span class="footer-logo">🎮 GAMEZONE ACCESSORIES</span>
+            </div>
+            <div class="mb-3">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitch"></i></a>
+            </div>
+            <div class="mb-2">
+                <a href="https://wa.me/521234567890" target="_blank" class="text-decoration-none" style="color:var(--gamer-green);font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:1px;">
+                    <i class="fab fa-whatsapp me-2"></i>WhatsApp: +52 123 456 7890
+                </a>
+            </div>
+            <div class="mb-3">
+                <a href="mailto:zgame.zero29@gmail.com" class="text-decoration-none" style="color:var(--neon-blue);font-family:'Rajdhani',sans-serif;font-weight:600;letter-spacing:1px;">
+                    <i class="fas fa-envelope me-2"></i>zgame.zero29@gmail.com
+                </a>
+            </div>
+            <hr style="border-color:var(--dark-border);">
+            <p class="mb-0" style="color:#666;font-family:'Rajdhani',sans-serif;letter-spacing:2px;font-size:0.9rem;">
+                © 2026 GAMEZONE ACCESSORIES - Todos los derechos reservados
+            </p>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    WHATSAPP FLOATING BUTTON
+    ============================================ -->
+    <a href="https://wa.me/521234567890" target="_blank" class="whatsapp-float" title="Chatea con nosotros">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ============================================
+    CART OFFCANVAS
+    ============================================ -->
+    <div class="offcanvas offcanvas-end offcanvas-custom" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel"><i class="fas fa-shopping-cart me-2"></i>Tu Carrito</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartItems">
+                <p class="text-center text-muted py-5">Tu carrito está vacío</p>
+            </div>
+            <div class="mt-3 pt-3 border-top" style="border-color:var(--dark-border)!important;display:none;" id="cartFooter">
+                <p class="cart-total">Total: $<span id="cartTotal">0.00</span></p>
+                <button class="btn btn-neon-green w-100 mt-2" onclick="checkout()">
+                    <i class="fas fa-credit-card me-2"></i>Proceder al Pago
+                </button>
+                <button class="btn btn-outline-light w-100 mt-2 btn-sm" onclick="clearCart()">
+                    <i class="fas fa-trash me-2"></i>Vaciar Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-notification" id="toastNotification"></div>
+
+    <!-- ============================================
+    SCRIPTS
+    ============================================ -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+    </script>
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+
+    <script>
+        // ============================================
+        // INITIALIZE AOS
+        // ============================================
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: false,
+            mirror: false,
+            offset: 80,
+        });
+
+        // ============================================
+        // NAVBAR SCROLL EFFECT
+        // ============================================
+        const navbar = document.getElementById('mainNavbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ============================================
+        // PARTICLES CANVAS
+        // ============================================
+        const canvas = document.getElementById('particlesCanvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        let animationId;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            initParticles();
+        });
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2.5 + 0.8;
+                this.speedX = (Math.random() - 0.5) * 0.6;
+                this.speedY = (Math.random() - 0.5) * 0.6;
+                const colors = ['#00D4FF', '#00FFFF', '#B026FF', '#A8FF00', '#ffffff'];
+                this.color = colors[Math.floor(Math.random() * colors.length)];
+                this.opacity = Math.random() * 0.7 + 0.3;
+                this.pulseSpeed = Math.random() * 0.02 + 0.005;
+                this.pulseOffset = Math.random() * Math.PI * 2;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.x < -10) this.x = canvas.width + 10;
+                if (this.x > canvas.width + 10) this.x = -10;
+                if (this.y < -10) this.y = canvas.height + 10;
+                if (this.y > canvas.height + 10) this.y = -10;
+                this.opacity = 0.3 + Math.sin(Date.now() * this.pulseSpeed + this.pulseOffset) * 0.4;
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color;
+                ctx.globalAlpha = this.opacity;
+                ctx.fill();
+                ctx.shadowColor = this.color;
+                ctx.shadowBlur = 8;
+                ctx.fill();
+                ctx.shadowBlur = 0;
+                ctx.globalAlpha = 1;
+            }
+        }
+
+        function initParticles() {
+            const count = Math.floor((canvas.width * canvas.height) / 8000);
+            particles = [];
+            for (let i = 0; i < Math.min(count, 200); i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            // Draw connections
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist < 120) {
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(0,212,255,${0.08 * (1 - dist/120)})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            animationId = requestAnimationFrame(animateParticles);
+        }
+
+        initParticles();
+        animateParticles();
+
+        // ============================================
+        // COUNTDOWN TIMER
+        // ============================================
+        function startCountdown() {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 7);
+            endDate.setHours(23, 59, 59, 999);
+
+            function updateCountdown() {
+                const now = new Date();
+                const diff = endDate - now;
+                if (diff <= 0) {
+                    document.getElementById('days').textContent = '00';
+                    document.getElementById('hours').textContent = '00';
+                    document.getElementById('minutes').textContent = '00';
+                    document.getElementById('seconds').textContent = '00';
+                    return;
+                }
+                const d = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const h = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const m = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const s = Math.floor((diff % (1000 * 60)) / 1000);
+                document.getElementById('days').textContent = String(d).padStart(2, '0');
+                document.getElementById('hours').textContent = String(h).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+            }
+            updateCountdown();
+            setInterval(updateCountdown, 1000);
+        }
+        startCountdown();
+
+        // ============================================
+        // SWIPER TESTIMONIALS
+        // ============================================
+        const swiper = new Swiper('.testimonialSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 25,
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                768: { slidesPerView: 2, spaceBetween: 25 },
+                1024: { slidesPerView: 3, spaceBetween: 30 },
+            },
+        });
+
+        // ============================================
+        // PRODUCT FILTERS
+        // ============================================
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                productItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.setAttribute('data-aos', 'fade-up');
+                        item.style.opacity = '1';
+                    } else {
+                        item.style.display = 'none';
+                        item.style.opacity = '0';
+                    }
+                });
+                // Refresh AOS
+                setTimeout(() => AOS.refresh(), 100);
+            });
+        });
+
+        // ============================================
+        // CART FUNCTIONALITY
+        // ============================================
+        let cart = JSON.parse(localStorage.getItem('gamezone_cart') || '[]');
+
+        function saveCart() {
+            localStorage.setItem('gamezone_cart', JSON.stringify(cart));
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartCount = document.getElementById('cartCount');
+            const cartItemsContainer = document.getElementById('cartItems');
+            const cartFooter = document.getElementById('cartFooter');
+            const cartTotal = document.getElementById('cartTotal');
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+            cartCount.textContent = totalItems;
+            if (totalItems > 0) {
+                cartCount.style.display = 'flex';
+                cartCount.style.animation = 'none';
+                void cartCount.offsetWidth;
+                cartCount.style.animation = 'bounce-cart 0.5s ease';
+            } else {
+                cartCount.style.display = 'flex';
+            }
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML =
+                    '<p class="text-center text-muted py-5"><i class="fas fa-shopping-basket fa-3x mb-3 d-block"></i>Tu carrito está vacío</p>';
+                cartFooter.style.display = 'none';
+            } else {
+                cartItemsContainer.innerHTML = cart.map((item, index) => `
+                    <div class="cart-item">
+                        <span style="font-size:2.5rem;">${item.icon}</span>
+                        <div class="cart-item-info flex-grow-1">
+                            <h6>${item.name}</h6>
+                            <span class="price">$${item.price.toFixed(2)} x ${item.quantity}</span>
+                        </div>
+                        <button class="btn btn-sm text-danger" onclick="removeFromCart(${index})" title="Eliminar">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                    </div>
+                `).join('');
+                cartFooter.style.display = 'block';
+                const total = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+                cartTotal.textContent = total.toFixed(2);
+            }
+        }
+
+        function addToCart(name, price, icon) {
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.quantity++;
+            } else {
+                cart.push({ name, price, quantity: 1, icon });
+            }
+            saveCart();
+            showToast(`¡${name} agregado al carrito!`);
+            // Open cart offcanvas
+            const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById('cartOffcanvas'));
+            cartOffcanvas.show();
+        }
+
+        function removeFromCart(index) {
+            if (cart[index].quantity > 1) {
+                cart[index].quantity--;
+            } else {
+                cart.splice(index, 1);
+            }
+            saveCart();
+        }
+
+        function clearCart() {
+            cart = [];
+            saveCart();
+            showToast('Carrito vaciado', 'error');
+        }
+
+        function checkout() {
+            if (cart.length === 0) return;
+            showToast('¡Redirigiendo al pago seguro...');
+            // Here you would redirect to a payment gateway
+            alert(
+                '🛒 Procediendo al pago...\n\nProductos en tu carrito:\n' +
+                cart.map(i => `• ${i.name} x${i.quantity} - $${(i.price*i.quantity).toFixed(2)}`).join('\n') +
+                `\n\nTotal: $${cart.reduce((s,i) => s + i.price*i.quantity, 0).toFixed(2)}`
+            );
+        }
+
+        // ============================================
+        // TOAST NOTIFICATION
+        // ============================================
+        function showToast(message, type = 'success') {
+            const toast = document.getElementById('toastNotification');
+            toast.textContent = message;
+            toast.className = 'toast-notification ' + (type === 'error' ? 'error' : '');
+            toast.classList.add('show');
+            clearTimeout(toast._timeout);
+            toast._timeout = setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Initial cart UI update
+        updateCartUI();
+
+        // ============================================
+        // SEARCH OVERLAY
+        // ============================================
+        const searchToggle = document.getElementById('searchToggle');
+        const searchOverlay = document.getElementById('searchOverlay');
+        const searchClose = document.getElementById('searchClose');
+        const searchInput = document.getElementById('searchInput');
+
+        searchToggle.addEventListener('click', () => {
+            searchOverlay.classList.add('active');
+            setTimeout(() => searchInput.focus(), 300);
+        });
+        searchClose.addEventListener('click', () => {
+            searchOverlay.classList.remove('active');
+            searchInput.value = '';
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && searchOverlay.classList.contains('active')) {
+                searchOverlay.classList.remove('active');
+                searchInput.value = '';
+            }
+            // Ctrl+K to open search
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault();
+                searchOverlay.classList.add('active');
+                setTimeout(() => searchInput.focus(), 300);
+            }
+        });
+        // Live search filter
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase().trim();
+            productItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (query === '' || text.includes(query)) {
+                    item.style.display = 'block';
+                    item.style.opacity = '1';
+                } else {
+                    item.style.display = 'none';
+                    item.style.opacity = '0';
+                }
+            });
+            // Scroll to products section
+            if (query.length > 0) {
+                document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+
+        // ============================================
+        // CONTACT FORM
+        // ============================================
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+        const submitBtn = document.getElementById('submitBtn');
+
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+
+            // Honeypot check
+            const honeypot = document.getElementById('honeypot').value;
+            if (honeypot) {
+                formMessage.style.display = 'block';
+                formMessage.innerHTML =
+                    '<span style="color:#ff4444;">⛔ Mensaje bloqueado por posible spam.</span>';
+                return;
+            }
+
+            // Get form values
+            const name = document.getElementById('inputName').value.trim();
+            const email = document.getElementById('inputEmail').value.trim();
+            const phone = document.getElementById('inputPhone').value.trim();
+            const subject = document.getElementById('inputSubject').value.trim();
+            const message = document.getElementById('inputMessage').value.trim();
+
+            // Validation
+            let valid = true;
+            const fields = [
+                { id: 'inputName', value: name, type: 'text' },
+                { id: 'inputEmail', value: email, type: 'email' },
+                { id: 'inputSubject', value: subject, type: 'text' },
+                { id: 'inputMessage', value: message, type: 'text' },
+            ];
+
+            fields.forEach(f => {
+                const el = document.getElementById(f.id);
+                const feedback = el.parentElement.querySelector('.invalid-feedback');
+                if (!f.value || (f.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value))) {
+                    if (feedback) feedback.style.display = 'block';
+                    el.style.borderColor = '#ff4444';
+                    valid = false;
+                } else {
+                    if (feedback) feedback.style.display = 'none';
+                    el.style.borderColor = 'var(--dark-border)';
+                }
+            });
+
+            if (!valid) return;
+
+            // Show loading
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+            formMessage.style.display = 'none';
+
+            // Send to backend
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, email, phone, subject, message }),
+                });
+
+                const data = await response.json();
+
+                if (response.ok) {
+                    formMessage.style.display = 'block';
+                    formMessage.innerHTML =
+                        '<span style="color:var(--gamer-green);">✅ ¡Mensaje enviado con éxito! Te contactaremos pronto.</span>';
+                    contactForm.reset();
+                    // Reset border colors
+                    document.querySelectorAll('.form-control-custom').forEach(el => {
+                        el.style.borderColor = 'var(--dark-border)';
+                    });
+                } else {
+                    throw new Error(data.message || 'Error al enviar');
+                }
+            } catch (err) {
+                console.error('Error sending form:', err);
+                formMessage.style.display = 'block';
+                formMessage.innerHTML =
+                    '<span style="color:#ff4444;">⚠️ Hubo un problema al enviar. Intenta de nuevo o escríbenos directamente a <a href="mailto:zgame.zero29@gmail.com" style="color:var(--neon-blue);">zgame.zero29@gmail.com</a></span>';
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane me-2"></i>Enviar Mensaje';
+            }
+        });
+
+        // ============================================
+        // SMOOTH SCROLL FOR NAV LINKS
+        // ============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Close mobile menu if open
+                    const navbarCollapse = document.querySelector('.navbar-collapse');
+                    if (navbarCollapse.classList.contains('show')) {
+                        bootstrap.Collapse.getInstance(navbarCollapse).hide();
+                    }
+                }
+            });
+        });
+
+        // ============================================
+        // ACTIVE NAV LINK ON SCROLL
+        // ============================================
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 120;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ============================================
+        // CATEGORY CARD CLICK -> FILTER PRODUCTS
+        // ============================================
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const category = this.getAttribute('data-category');
+                // Scroll to products
+                document.getElementById('productos').scrollIntoView({ behavior: 'smooth' });
+                // Trigger filter
+                setTimeout(() => {
+                    const filterBtn = document.querySelector(`.filter-btn[data-filter="${category}"]`);
+                    if (filterBtn) filterBtn.click();
+                }, 500);
+            });
+        });
+
+        console.log('%c🎮 GAMEZONE ACCESSORIES %c| %cPotencia tu Experiencia Gamer',
+            'color:#00D4FF;font-size:1.5rem;font-weight:bold;',
+            'color:#fff;',
+            'color:#B026FF;font-size:1rem;');
+        console.log('%c💻 Desarrollado con Node.js + Express + Nodemailer',
+        'color:#A8FF00;font-size:0.9rem;');
+        console.log('%c📧 Contacto: zgame.zero29@gmail.com', 'color:#00FFFF;');
+        console.log('%c⚡ Presiona Ctrl+K para buscar productos', 'color:#B026FF;font-style:italic;');
+    </script>
+</body>
+</html>
